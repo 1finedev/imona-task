@@ -30,7 +30,7 @@ const UsersList = () => {
                 </div>
 
                 {/* LIST OF USERS */}
-                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 md:px-16 md:gap-8">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 md:px-16 md:gap-8">
                   {users.length > 0 &&
                     users.map((user) => (
                       <UserCard

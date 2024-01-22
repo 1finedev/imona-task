@@ -24,17 +24,17 @@ const UserCard = ({
           alt={user?.first_name}
           width={150}
           height={150}
-          className="rounded-[.95rem] transform min-h-[150px] object-cover transition-transform duration-500 hover:scale-110"
+          className="rounded-[.95rem] transform h-[65px] w-[65px] md:w-[150px] md:min-h-[150px] object-cover transition-transform duration-500 hover:scale-110"
         />
       </div>
       <div className="text-center">
-        <h2 className="text-dark font-semibold hover:text-primary text-[1.25rem] transition-colors duration-200 ease-in-out">
+        <h2 className="text-dark font-semibold hover:text-primary text-lg md:text-[1.25rem] transition-colors duration-200 ease-in-out">
           {user.first_name} {user.last_name}
         </h2>
         {!isSingle && setCurrentUserId && (
           <h4
             onClick={() => setCurrentUserId(user?.id)}
-            className="block font-medium text-muted mx-auto hover:underline underline-offset-2 cursor-pointer"
+            className="block font-medium text-muted mx-auto hover:underline underline-offset-2 cursor-pointer text-sm md:text-base"
           >
             View Profile
           </h4>
