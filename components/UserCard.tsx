@@ -12,7 +12,12 @@ const UserCard = ({
   setCurrentUserId?: Dispatch<SetStateAction<number | null>>;
 }) => {
   return (
-    <div className="flex flex-col items-center text-center mb-11">
+    <div
+      onClick={() =>
+        !isSingle && setCurrentUserId && setCurrentUserId(user?.id)
+      }
+      className="flex flex-col items-center text-center mb-11"
+    >
       <div className="inline-block mb-4 relative shrink-0 rounded-[.95rem]">
         <Image
           src={user?.avatar}
